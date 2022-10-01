@@ -1,0 +1,439 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --header-font: 1rem;
+    --h3-home: 2.5rem;
+}
+
+.logo {
+    color: white;
+    font-size: var(--header-font);
+    font-weight: 600;
+}
+
+.logo span {
+    color: purple;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    z-index: 1000;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist li {
+    padding: 15px;
+    font-size: var(--header-font);
+}
+
+.navlist li a {
+    color: white;
+}
+
+.navlist li a:hover {
+    color: purple;
+    transition: all 1s ease;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+header.scrollheader {
+    transition: all 1s ease;
+    background: white;
+    padding: 0px 5%;
+}
+
+header.scrollheader a{
+    color: black;
+}
+
+header.scrollheader a:hover {
+    color: purple;
+    transition: all .20s ease;
+}
+
+section {
+    padding: 160px 16% 90px;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/hero.svg');
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text {
+    display: grid;
+    gap: 2rem;
+    height: auto;
+    width: 70%;
+}
+
+.home-text h3 {
+    color: white;
+    font-size: var(--h3-home);
+}
+
+.home-text p {
+    color: white;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 6vh;
+    background: white;
+    border-radius: 0.3rem;
+    color: black;
+}
+
+.btn:hover {
+    transition: all .40s ease;
+}
+
+.btn i {
+    margin-right: 10%;
+}
+
+.home-img {
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.home-img img {
+    width: 80%;
+    height: auto;
+}
+
+.download-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.download-icons i {
+    font-size: 30px;
+}
+
+.bxl-android {
+    color: white;
+    margin: 0 3%;
+}
+
+.bxl-android:hover {
+    color: green;
+    transform: scale(1.2);
+    transition: all .80s ease;
+}
+
+.bxl-windows {
+    color: white;
+}
+
+.bxl-windows:hover {
+    color: blue;
+    transform: scale(1.2);
+    transition: all .80s ease;
+}
+
+.features {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    justify-content: center;
+    align-items: baseline;
+    grid-template-columns: repeat(auto-fit, minmax(22%, auto));
+    gap: 2rem;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.feature img {
+    width: 20%;
+    height: auto;
+}
+
+.feature h4 {
+    font-size: 14px;
+    color: purple;
+}
+
+.feature p {
+    font-size: 13px;
+    color: gray;
+    margin-top: 5%;
+}
+
+.apptech {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.apptech span {
+    color: purple;
+}
+
+.apptechfeatures {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.left {
+    text-align: right;
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+}
+
+.left-content h4 {
+    color: purple;
+}
+
+.left-content p {
+    font-size: 12px;
+    color: darkgray;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center img {
+    width: 60%;
+    height: auto;
+}
+
+.right {
+    text-align: left;
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+}
+
+.right-content h4 {
+    color: purple;
+}
+
+.right-content p {
+    font-size: 12px;
+    color: darkgray;
+}
+
+.pricing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pricing-header {
+    height: 20vh;
+    width: 100%;
+}
+
+.pricing-header h2{
+    color: purple;
+    text-align: center;
+}
+
+.pricing-header p {
+    color: darkgray;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.pricing-grid {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, auto));
+    gap: 2rem;
+}
+
+.plan {
+    margin-top: 15%;
+    text-align: center;
+    display: grid;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.plan h4 {
+    font-size: 28px;
+}
+
+.plan span {
+    color: darkgray;
+    font-size: 13px;
+}
+
+.pricing-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+    width: 130px;
+    height: 6vh;
+    font-size: 14px;
+    border: 1px solid purple;
+    background: white;
+}
+
+.pricing-btn:hover {
+    transition: all .40s ease;
+    background-color: purple;
+    color: white;
+}
+
+.faq {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .features {
+        grid-template-columns: repeat(1, 1fr);
+        height: 110vh;
+    }
+
+    .apptech {
+        height: 80vh;
+    }
+
+    .features p {
+        margin-top: 0%;
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing {
+        height: 310vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .pricing{
+        height: 180vh;
+    }
+
+    .center img {
+        display: none;
+    }
+
+    .apptechfeatures {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .left-content {
+        display: grid;
+        gap: 1rem;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .left-content p {
+        font-size: 11px;
+    }
+
+    .right-content {
+        display: grid;
+        gap: 1rem;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .right-content p {
+        font-size: 11px;
+    }
+
+    .home {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 70vh;
+    }
+
+    .home h3 {
+        font-size: 35px;
+    }
+
+    .home-img {
+        display: none;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: inline-block;
+        font-size: 1.4rem;
+    }
+
+    .home-text {
+        width: 100%;
+    }
+
+    .pricing {
+        height: 160vh;
+    }
+
+    .faq {
+        margin-top: 20%;
+    }
+
+    .faq p{
+        margin-top: 2%;
+        font-size: 14px;
+        line-height: 2;
+    }
+}
